@@ -1,6 +1,16 @@
+/* Nuñez Jimena Div H
+IF 05 
+Al ingresar una edad solo debemos informar si la persona NO es adolescente. */
+
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad
 
-}//FIN DE LA FUNCIÓN
+	edad = txtIdEdad.value;
+	edad = parseInt(edad);
+	if(edad<13 || edad>17)
+	{
+		alert("No es adolescente");
+	}
+
+}//FIN DE LA FUNCIÓN //

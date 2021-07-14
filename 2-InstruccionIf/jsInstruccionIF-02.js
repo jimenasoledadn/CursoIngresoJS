@@ -1,7 +1,18 @@
+/* Nuñez Jimena Div H
+  IF2 */
 function mostrar()
 {
-	//tomo la edad  
-	alert("ok");
+	var edad;
+
+	edad = txtIdEdad.value;
+	edad = parseInt(edad);
+	if(edad>=18)
+	//tomo la edad  //
+	alert(edad>=18);
 	
 
 }//FIN DE LA FUNCIÓN
+
+/*
+
+txtIdEdad */
