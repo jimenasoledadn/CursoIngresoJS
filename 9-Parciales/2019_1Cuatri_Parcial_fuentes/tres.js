@@ -1,4 +1,5 @@
-/*
+/*Nuñez, Jimena Div H
+Parcial 2019 tres.js
 Bienvenidos.
 Pedir por prompt el precio 
 y el porcentaje de descuento, 

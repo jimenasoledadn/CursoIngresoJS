@@ -26,6 +26,7 @@ function mostrar()
 	    {
 		alert ("Vamos, la próxima se puede");
 	    }
+	    
 	//Genero el número RANDOM entre 1 y 10 
 	
 

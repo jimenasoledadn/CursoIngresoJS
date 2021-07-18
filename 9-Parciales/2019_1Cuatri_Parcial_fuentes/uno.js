@@ -1,4 +1,5 @@
-/*
+/*Nuñez, Jimena Div H
+Parcial 2019 uno.js
 Bienvenidos.
 Realizar el algoritmo que pida los datos necesarios para un
  triángulo equilátero por prompt 

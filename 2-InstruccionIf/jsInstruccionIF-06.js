@@ -26,3 +26,13 @@ function mostrar()
 }//FIN DE LA FUNCIÓN
 //txtIdEdad 
 
+/* FORMA CORRECTA:
+
+    var edad;
+	
+	edad = txtIdEdad.value;
+	edad = parseInt(edad);
+	if(edad>=18)
+	{
+		alert("Es mayor de edad");
+	}
