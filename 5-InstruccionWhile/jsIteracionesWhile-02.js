@@ -6,10 +6,10 @@ function mostrar()
 {
 	var contador;
 
-	contador = 10 
-	while(contador<0 || contador>10)
+	contador = 0; 
+	while(contador<10)
 	{
-		document.write(contador-1);
+		document.write(contador);
 		contador=contador-1;
 	}
 	alert("alal");

@@ -1,4 +1,4 @@
-/* Nuñez Jimena Div H
+/* Nuñez Jimena Div 
      While 06
 Al presionar el botón pedir 5 números e informar la suma acumulada y el promedio. */
 function mostrar()
@@ -18,7 +18,6 @@ function mostrar()
 		                                  medida que el usuario ingresa los nros. */
 		contador = contador +1; //cuanta la cant de vcs, para que se cumpla <5
 	}
-	
 	txtIdSuma.value=suma;
 	txtIdPromedio.value=suma/contador; 
 }//FIN DE LA FUNCIÓN

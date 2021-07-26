@@ -10,8 +10,5 @@ function mostrar()
 	{
 		sexoIngresado=prompt("Error... Ingrese f o m ");
 	}
-
-
-
-	txtIdSexo.value=sexoIngresado;
+	txtIdSexo.value=sexoIngresado;	
 }//FIN DE LA FUNCIÓN
