@@ -57,6 +57,12 @@ function mostrar()
 			numeroIngresado=prompt("Error.. Reingrese un numero entre -1000 y 1000: ");
 			numeroIngresado=parseInt(numeroIngresado);
 		} 
+		if(numeroIngresado>maximoIngresado || primerNumeroIngresado==true)
+		{
+			maximoIngresado=numeroIngresado;
+			primerNumeroIngresado=false;
+		}
+
 		if(numeroIngresado<0)
 		{
 			sumaNegativos=sumaNegativos+numeroIngresado;
@@ -69,13 +75,18 @@ function mostrar()
 				sumaPositivos=sumaPositivos+numeroIngresado;
 				cantidadPositivos=cantidadPositivos+1;
 
+				if(numeroIngresado<minimoDeLosPositivos || primerNumeroPositivo==true)
+				{
+					minimoDeLosPositivos=numeroIngresado;
+					primerNumeroPositivo=false;
+				}
 			}
 			else
 			{
 				cantidadCeros=cantidadCeros+1; //POR QUE ME APARECE EL DOBLE???
 			}
 		}
-		if(numeroIngresado%2==0)
+		if(numeroIngresado%2==0 && numeroIngresado!=0)
 		{
 			cantidadNumerosPares++;
 		}	
@@ -101,7 +112,7 @@ function mostrar()
 	}
 	else
 	{
-		document.write(" El promedio de los positivos no se pudo calcular " + "<br>");
+		document.write(" El promedio de los positivos no se pudo calcular porque no ingresó ninguno" + "<br>");
 	}
 	if(cantidadNegativos!=0)
 	{
@@ -114,20 +125,24 @@ function mostrar()
 	}
 	document.write(" La diferencia entre los numeros positivos y negativos es: " + positivosMenosNegativos + "<br>");
 	document.write(" La cantidad de numeros pares es: " + cantidadNumerosPares + "<br>");
-	if(numeroIngresado>maximoIngresado || primerNumeroIngresado==true)
+	document.write(" El máximo de los numeros ingresados es: " + maximoIngresado + "<br>");
+	document.write(" El mínimo de los positivos es: " + minimoDeLosPositivos + "<br>");
+}//FIN DE LA FUNCIÓN
+
+	/*if(numeroIngresado!=0 && numeroIngresado>maximoIngresado || primerNumeroIngresado==true)
 	{
 		maximoIngresado=numeroIngresado;
 		document.write(" El máximo de los numeros ingresados es: " + maximoIngresado + "<br>");
 		primerNumeroIngresado=false;
 	}
-	if(numeroIngresado>0 && numeroIngresado<minimoDeLosPositivos || primerNumeroPositivo==true)
+	if(numeroIngresado!=0 && numeroIngresado<minimoDeLosPositivos || primerNumeroPositivo==true)
 	{
 		minimoDeLosPositivos=numeroIngresado;
 		document.write(" El mínimo de los positivos es: " + minimoDeLosPositivos + "<br>");
 		primerNumeroPositivo=false;
-	}
+	} */
 
-}//FIN DE LA FUNCIÓN
+
 /*
 	//declarar contadores y variables 
 	var respuesta;
